@@ -1,0 +1,117 @@
+html {
+    font-family: sans-serif;
+}
+
+#game {
+    background-color: #172836;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#begin-game {
+    width: 300px;
+    height: 100px;
+    background-color: #6f42c1;
+    color: #e9ecef;
+    text-align: center;
+    font-size: 42px;
+    line-height: 2;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    /* // display: none; */
+}
+
+#player-name {
+    color: #e9ecef;
+    display: none;
+    position: absolute;
+    top:20px;
+    font-size: 30px;
+    margin: auto;
+}
+
+#game-over {
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    color: #e9ecef;
+    text-align: center;
+    font-size: 42px;
+    line-height: 2;
+    font-family: sans-serif;
+    position: absolute;
+    z-index: 4;
+    display: none;
+    cursor: pointer;
+}
+
+#play-area {
+    /* // min-width: 675px; */
+    min-height: 600px;
+    margin: auto;
+    opacity: 0;
+    display: flex;
+}
+
+.shaft {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.lever-left {
+    width: 39px;
+    height: 20px;
+    background-color: yellow;
+    align-self: flex-end;
+}
+
+.lever-right {
+    width: 39px;
+    height: 20px;
+    background-color: yellow;
+    align-self: flex-start;
+}
+
+.stem {
+    width: 20px;
+    height: 260px;
+    background-color: yellow;
+    align-self: center;
+}
+
+.base {
+    width: 58px;
+    height: 10px;
+    background-color: yellow;
+}
+
+
+#game-board-underlay {
+    /* // width: 560px;
+    // height: 480px; */
+    width: 535px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    /* // background-color: $mask;
+    // background-image: url("/bg.jpg"); */
+}
+
+#mask {
+    width: 100%;
+    height: 100%;
+    background-color: #398331;
+}
+
+.token {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: 8px;
+}
